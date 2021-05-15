@@ -1,1 +1,48 @@
-// LAYOUT
+// TESTIMONIALS
+.testimonials {
+  @include maxWidthLg;
+
+  &__content {
+    @include sectionSpacing;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "purple purple grayish-blue white-2"
+      "white-1 dark-blue dark-blue white-2";
+
+    @include responsive(lg) {
+      grid-template-areas:
+        "purple purple"
+        "grayish-blue grayish-blue"
+        "white-1 white-1"
+        "dark-blue dark-blue"
+        "white-2 white-2";
+    }
+
+    .testimonial__card--purple {
+      grid-area: purple;
+      background-color: color(moderateViolet);
+    }
+    .testimonial__card--grayish-blue {
+      grid-area: grayish-blue;
+      background-color: color(darkGrayishBlue);
+    }
+    .testimonial__card--white-1 {
+      grid-area: white-1;
+      background-color: color(white);
+    }
+    .testimonial__card--white-2 {
+      grid-area: white-2;
+      grid-row: 1 / -1;
+      background-color: color(white);
+
+      @include responsive(lg) {
+        grid-row: auto;
+      }
+    }
+    .testimonial__card--dark-blue {
+      grid-area: dark-blue;
+      background-color: color(darkerGrayishBlue);
+    }
+  }
+}

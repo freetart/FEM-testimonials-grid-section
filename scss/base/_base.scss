@@ -16,7 +16,11 @@ html {
 }
 
 body {
+  @include flexCenter;
   font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: color(lightGrayishBlue);
+  height: 100%;
+  width: 100%;
 }
 
 a {
