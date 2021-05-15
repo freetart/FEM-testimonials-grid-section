@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon/koala.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Frontend Mentor Testimonials Grid Section</title>
   </head>
@@ -11,7 +12,10 @@
     <section class="testimonials">
       <div class="testimonials__content">
         <!-- single testimonial -->
-        <article class="testimonial__card testimonial__card--purple">
+        <article
+          class="testimonial__card testimonial__card--purple"
+          data-aos="fade-down-right"
+        >
           <!-- quote icon -->
           <img
             src="./images/bg-pattern-quotation.svg"
@@ -51,7 +55,10 @@
           </div>
         </article>
         <!-- single testimonial -->
-        <article class="testimonial__card testimonial__card--grayish-blue">
+        <article
+          class="testimonial__card testimonial__card--grayish-blue"
+          data-aos="fade-down"
+        >
           <div class="testimonial__header">
             <img
               src="./images/image-jonathan.jpg"
@@ -76,7 +83,10 @@
           </div>
         </article>
         <!-- single testimonial -->
-        <article class="testimonial__card testimonial__card--white-1">
+        <article
+          class="testimonial__card testimonial__card--white-1"
+          data-aos="fade-up-right"
+        >
           <div class="testimonial__header">
             <img
               src="./images/image-jeanette.jpg"
@@ -101,7 +111,10 @@
           </div>
         </article>
         <!-- single testimonial -->
-        <article class="testimonial__card testimonial__card--dark-blue">
+        <article
+          class="testimonial__card testimonial__card--dark-blue"
+          data-aos="fade-up"
+        >
           <div class="testimonial__header">
             <img
               src="./images/image-patrick.jpg"
@@ -133,7 +146,10 @@
           </div>
         </article>
         <!-- single testimonial -->
-        <article class="testimonial__card testimonial__card--white-2">
+        <article
+          class="testimonial__card testimonial__card--white-2"
+          data-aos="fade-down-left"
+        >
           <div class="testimonial__header">
             <img
               src="./images/image-kira.jpg"
@@ -174,6 +190,10 @@
         </article>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200, duration: 1000, once: true });
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>

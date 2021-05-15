@@ -1,6 +1,7 @@
 // TESTIMONIALS
 .testimonials {
   @include maxWidthLg;
+  overflow: hidden;
 
   &__content {
     @include sectionSpacing;

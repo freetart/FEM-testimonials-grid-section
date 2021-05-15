@@ -6,6 +6,10 @@
   overflow: hidden;
   box-shadow: 0.1rem 0.1rem 1rem color(lightGray);
 
+  @include responsive(lg) {
+    padding: 2.8rem;
+  }
+
   .testimonial__header {
     display: flex;
     align-items: center;
