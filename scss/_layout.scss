@@ -90,12 +90,12 @@
   transition: 0.5s ease-in-out;
   opacity: 1;
 
-  &-content {
+  &__content {
     position: absolute;
     display: grid;
     place-items: center;
 
-    h1 {
+    h2 {
       @include headingStyles;
       font-size: size(xxl);
       color: color(moderateViolet);
@@ -103,7 +103,7 @@
       pointer-events: none;
     }
 
-    .preloader-img {
+    .preloader__img {
       width: 15rem;
       pointer-events: none;
     }
