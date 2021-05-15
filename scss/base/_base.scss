@@ -17,6 +17,7 @@ html {
 
 body {
   @include flexCenter;
+  flex-direction: column;
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: color(lightGrayishBlue);
   height: 100%;

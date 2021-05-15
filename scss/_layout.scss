@@ -47,3 +47,30 @@
     }
   }
 }
+
+// FOOTER
+.footer {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+
+  h3 {
+    @include textStyles;
+    font-size: size(xxs);
+  }
+
+  a {
+    @include headingStyles;
+    color: color(moderateViolet);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 5rem;
+  }
+}
