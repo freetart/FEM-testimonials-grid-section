@@ -4,6 +4,6 @@ testimonials grid layout section for frontend mentor.
 - features preloader & aos.js
 
 #### Technologies used
-- HTML
+- HTML w/ BEM naming convention
 - SCSS
 - Javascript
